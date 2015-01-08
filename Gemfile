@@ -10,7 +10,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'active_model_serializers'
 
-group :development do
+group :development, :test do
   gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
   gem 'compass-rails'
   gem 'furatto'
