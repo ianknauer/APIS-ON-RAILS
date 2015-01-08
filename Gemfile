@@ -10,3 +10,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'active_model_serializers'
 
+group :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem "ffaker"
+end
+
+gem 'devise'
+
