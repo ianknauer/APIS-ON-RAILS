@@ -18,4 +18,9 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "random"
   config.include Request::JsonHelpers, :type => :controller
+  config.include Request::HeaderHelpers, :type => :controller
+
+  config.before(:each, type: :controller) do 
+    include_default_accept_headers
+  end
 end
